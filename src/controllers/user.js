@@ -70,7 +70,7 @@ export const deleteUser = (req, res, next) => {
 };
 
 /**
- * Returns 'limit' number of users which starts with the loginSubstring query in sorted order according to their login
+ * Returns 'limit' number of users which starts with the loginSubstring query in sorted order according to their login property
  **/
 export const getAutoSuggestUsers = (req, res) => {
     const { loginSubstring = '', limit = 2 } = req.query;
